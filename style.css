@@ -1,0 +1,769 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'sans';
+    src: url('fonts/IRANSans\ 400.ttf') format('truetype');
+}
+body{
+    direction: rtl;
+    width: 100%;
+    position: relative;
+    font-family: 'sans';
+}
+.contiener{
+    width: 1350px;
+    margin: 0 auto;
+    position:relative ;
+}
+main{
+    width: 100%;
+}
+.background{
+    width: 100%;
+    position:absolute ;
+    top: 0;
+    right: 0;
+    height: 250px;
+}
+#background{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   right: 0;
+   background-image: url(Picture/background3.png);
+   background-repeat: no-repeat;
+   background-position:center;
+   opacity: .5;
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+.topMenu,.banner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+}
+.subMenu{
+    background-color: #bee4d1;
+    height: 50px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+}
+.topMenu .logo{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #bee4d1;
+}
+.topMenu .searchBox{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.topMenu .searchBox input{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #ecebeb;
+    border: none;
+    padding:0 8px;
+    color: #123525;
+    font-family: 'sans';
+}
+.topMenu .searchBox button{
+    width: 35px;
+    height: 35px;
+    background-color: #bee4d1;
+    border: none;
+    position: absolute;
+    left: 4px;
+    top: 2px;
+    border-radius: 10px;
+    font-family: 'sans';
+    cursor: pointer;
+}
+.topMenu .logins button a,.bannerTitle button a,.contact button a,.guide button a{
+    text-decoration: none;
+    color: #bee4d1;
+}
+.topMenu .logins button,.bannerTitle button,.login form button,.Menu button,.addmidicenc button, table td a,.edits button,.closes button, #alarm #clock{
+     padding: 8px 16px;
+     background-color: transparent;
+     color: #bee4d1;
+     font-size: 18px;
+     border: 2px solid #bee4d1;
+     border-radius: 10px;
+     font-weight: bold;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: 'sans';
+     cursor: pointer;
+}
+.subMenu nav{
+    display: flex;
+    align-items: center;
+}
+.subMenu nav ul{
+    display:flex ;
+    gap: 20px;
+}
+.subMenu nav ul li{
+    list-style: none;
+}
+.subMenu nav ul li a{
+    text-decoration: none;
+    color:#123525 ;
+    font-size: 18px;
+    font-family: 'sans';
+}
+.banner{
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+.banner .bannerTitle,.abutUs{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: #123525;
+}
+.abutUs{
+    margin: 130px auto 56px;
+    position: absolute;
+    right: -3000px;
+    transition: all .3s ease;
+}
+.abutUspage{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    margin: 85px auto ; 
+}
+.bannerTitle h1{
+    font-size: 55px;
+    font-family: 'sans';
+}
+.bannerTitle span{
+    font-size:32px ;
+    font-family: 'sans';
+}
+.bannerTitle button{
+    width: 175px;
+    margin-top: 24px;
+    font-family: 'sans';
+}
+.abutUs h2,.service h2,.opinins h2{
+    font-size: 35px;
+    font-family: 'sans';
+}
+.aboutUsContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+}
+.aboutUsContent img{
+    width: 350px;
+}
+.aboutUsContent .text{
+    width: 30%;
+    height: 250px;
+    color: #ecebeb;
+    background-color: #091a12;
+    padding: 16px;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.aboutUsContent .text h3{
+    font-size:25px ;
+    font-family: 'sans';
+}
+.aboutUsContent .text p{
+    font-size: 20px;
+    line-height: 2;
+    font-family: 'sans';
+}
+.service{
+    margin: 56px auto;
+    background-image: url(Picture/background2.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #123525;
+    width: 100%;
+    padding: 28px 16px;
+    gap: 16px;
+    position: absolute;
+    left: -3000px;
+    transition: all .3s ease-in;
+}
+.service .content{
+    width: 100%;
+    display:flex ;
+    align-items: center;
+    justify-content:space-around;
+}
+.servicecompany{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-radius: 10px;
+}
+.servicecompany img{
+    width: 50px;
+}
+.servicecompany span{
+    font-size: 23px;
+    font-family: 'sans';
+}
+.banners{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 150px auto 56px;
+    position: absolute;
+    right: -3000px;
+    transition: all .3s ease-in;
+}
+.banners .guide{
+    width: 45%;
+    height: 200px;
+    background: #123525;
+    border-radius: 10px;
+    position: relative;
+}
+.banners .contact{
+    width: 45%;
+    height: 200px;
+    background: #bee4d1;
+    border-radius: 10px; 
+    position: relative;
+}
+.guide img{
+    position: absolute;
+    left: 16px;
+    bottom: -50px;
+}
+.contact img{
+    position: absolute;
+    left: 28px;
+    bottom: 10px;
+}
+.guide button,.contact button{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background:white;
+    border: none;
+    margin: 85px 50px;
+    font-family: 'sans';
+}
+.opinins{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px auto 56px;
+    gap: 16px; 
+    position: absolute;
+    left: -3000px;
+    transition: all .3s ease-in;
+}
+.opinins .content{
+    width: 100%;
+    align-items: center;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.opinin{
+    width: 60%;
+    height: 220px;
+    border: 1px solid #cacaca;
+    background-color: white;
+    border-radius: 10px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+   color: #091a12;
+   padding: 20px;
+   gap: 16px;
+   margin:0 auto ;
+   animation: animate 15s linear infinite;
+   animation-delay: 3s;
+   opacity: 0;
+   position:absolute ;
+   top: 16px;
+}
+.outer:hover .card{
+    animation-play-state: paused;
+  }
+.opinin:last-child{
+    animation-delay: -3s;
+}
+.opinin .title{
+    display:flex ;
+    align-items: center;
+    gap:16px ;
+    height: 40%;
+}
+.opinin .title img{
+    width: 75px;
+    aspect-ratio: 1/1;
+}
+.opinin p{
+    font-size: 18px;
+    line-height: 2;
+    text-align: justify;
+    font-family: 'sans';
+}
+.topFooter{
+    width: 100%;
+    background-color: #bee4d1;
+    color: #091a12;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height:250px ;
+    border-radius: 10px 10px 0 0; 
+    padding: 16px; 
+}
+.topFooter .aboutsUS,.topFooter .page,.topFooter .contacts{
+    width: 25%;
+    display:flex ;
+    flex-direction: column;
+    gap:12px ;
+}
+.subFooter{
+    width:100% ;
+    background-color: #123525;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 16px 56px;
+}
+.topFooter .aboutsUS p{
+    width: 80%;
+    line-height: 1.5;
+    text-align: justify;
+    font-family: 'sans';
+}
+.contacts .social{
+   display: flex;
+   align-items:center ;
+   gap: 16px;
+}
+.contacts img{
+    width: 20px;
+}
+#phone{
+    width: 12px;
+}
+.page nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.page nav ul li{
+    list-style: none;
+}
+.page nav ul li a{
+    text-decoration:none ;
+    color: #091a12;
+}
+.login{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-direction:column ;
+   align-items: center;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #ecebeb;
+    border-radius: 10px;
+    padding: 8px;
+    width: 25%;
+    gap:8px ;
+    margin: 250px auto;
+}
+.login h3{
+    font-size:22px;
+    color: #091a12;
+    margin: 12px auto;
+    margin:16px auto;
+}
+.login form input{
+    background-color: #ecebeb;
+    color: #091a12;
+    width: 95%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 8px;
+    font-family: 'sans';
+}
+.login form span a{
+    text-decoration: none;
+    color: #091a12;
+    font-family: 'sans';
+}
+.login form span a{
+    text-decoration: none;
+    color: #bee4d1;
+    font-family: 'sans';
+}
+.Menu{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #f4fffa;
+    margin: 32px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 16px;
+    align-items: center;
+}
+.Menu button a{
+    text-decoration: none;
+    color: #bee4d1;
+}
+.edits{
+    position: absolute;
+    top: 0;
+    left:0 ;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    z-index: 100;
+    background-color: rgb(255, 255, 255, .5);
+    display: none;
+}
+.edits .closes button{
+    position: absolute;
+    top:130px;
+    left: 45px;
+}
+
+.edits input{
+    z-index: 100;
+}
+.addmidicenc form{
+    width:100% ;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 16px;
+    background-color: white;
+    border-radius: 10px;border: 1px solid #ecebeb;
+    padding: 16px 0;
+    margin: 56px auto;
+
+}
+.edits form{
+    width:100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color:white ;
+    border-radius: 10px;border: 1px solid #ecebeb;
+    height: 250px;
+    margin: 100px auto;
+    padding: 16px 0;
+    transition: all .3s;
+}
+.addmidicenc input,.edits input{
+    background-color: #ecebeb;
+    color: #091a12;
+    width: 42%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 8px;
+    font-family: 'sans';
+}
+.edits form{
+    border: 1px solid #ecebeb;
+}
+.displayMidicinec{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content:center;
+    margin: 0 auto;
+}
+table{
+    width:90% ;
+    background-color: white;
+    border-radius: 10px;border: 1px solid #ecebeb;
+    padding: 16px 0;
+    margin: 56px auto;
+    border-collapse: collapse;
+    display: inline-table;
+    font-family: 'sans';
+}
+table tr th{
+    width:  33%;
+    background-color: #bee4d1;
+    border: 1px solid #1b4934;
+    padding: 12px 0;
+    font-size: 22px;
+    color: #091a12;
+
+}
+table tr{
+    width: 100%;
+}
+table tr td{
+    width:  33%;
+    border: 1px solid #ecebeb;
+    padding: 12px 0;
+    font-size: 22px;
+    color: #091a12;
+    text-align: center;
+    font-family: 'sans';
+}
+table td .edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+table td a{
+    width: 100px;
+    text-decoration: none;
+}
+#row{
+    width: 5%;
+}
+.guides{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 56px auto;
+}
+.part1,.part2,.part3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap:16px ;
+}
+.discriptiopn{
+    width: 50%;
+    border: 1px solid #ecebeb;
+    border-radius: 10px;
+    padding: 16px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'sans';
+}
+.part1 .guidePicture img,.part2 .guidePicture img,.part3 .guidePicture img{
+    width: 450px;
+    height: 400px;
+    border:1px solid #123525 ;
+    border-radius: 10px;
+}
+.errors{
+    z-index: 15;
+}
+#alarm{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #ecebeb;
+    margin: 50px auto;
+    border-radius: 10px;
+    justify-content: space-around;
+    z-index: 100;
+}
+#alarm input{
+    background: #ecebeb;
+    color: #091a12;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 8px;
+    z-index: 200;
+    font-family: 'sans';
+    font-size: 15px;
+}
+#alarm button{
+    z-index: 100;
+}
+#table{
+    width: 100%;
+    margin: 20px auto;
+}
+/*******************/
+  @keyframes animate {
+    0%{
+      opacity: 0;
+      transform: translateY(5%) scale(0.5);
+      display: none;
+    }
+    5%, 20%{
+      opacity: 0.4;
+      transform: translateY(10%) scale(0.7);
+    }
+    25%, 40%{
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0%) scale(1);
+      display: block;
+    }
+    45%, 100%{
+      opacity: 0;
+      transform: translateY(-5%) scale(0.5);
+    }
+  }
+  @media only screen and (min-width:600px) and (max-width:900px){
+    .contiener{
+       width: 100%;
+    }
+    .banner img{
+        width: 400px;
+    }
+    .aboutUsContent .text{
+        width: 40%;
+    }
+    .banners{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .banners .guide{
+        width: 85%;
+    }
+    .banners  .contact{
+        width: 85%;
+    }
+    .part1 .guidePicture img, .part2 .guidePicture img, .part3 .guidePicture img{
+        width: 385px;
+        aspect-ratio: 1/1;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+  .contiener{
+      width: 100%;
+  }
+  .banner{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .banner img{
+    width: 95%;
+  }
+  .banners{
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.abutUs{
+    margin: 20px;
+}
+.aboutUsContent{
+    flex-wrap: wrap;
+}
+.aboutUsContent .text {
+    width: 75%;
+}
+.banners .guide{
+    width: 85%;
+}
+.banners  .contact{
+    width: 85%;
+}
+.service .content{
+    overflow-x: auto;
+    scroll-snap-align: none center;
+    gap: 4px;
+}
+.topFooter{
+    flex-wrap: wrap;
+    height: 335px;
+    align-items: center;
+    justify-content: center;
+}
+.topFooter .aboutsUS, .topFooter .page, .topFooter .contacts{
+    width: 88%;
+}
+.topFooter .page{
+    width: 30%;
+}
+.topFooter .contacts{
+    width: 35%;
+}
+.topMenu, .banner{
+    padding: 16px;
+}
+.login form{
+    width: 60%;
+}
+.part1,.part2,.part3{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.discriptiopn {
+    width: 100%;
+}
+.part1 .guidePicture img, .part2 .guidePicture img, .part3 .guidePicture img{
+    width: 350px;
+    aspect-ratio: 1/1;
+}
+.topMenu .searchBox input{
+    width: 208px;
+}
+.contact img,.guide img{
+    width: 195px;
+}
+.contact button,.guide button{
+    width: 165px;
+}
+.addmidicenc form,.edits form {
+    flex-wrap: wrap;
+    width: 95%;
+}
+.addmidicenc input, .edits input{
+    width: 90%;
+}
+.edits form input.gap{
+    margin: 70px 0 0;
+}
+  }

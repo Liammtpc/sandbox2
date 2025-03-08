@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contiener">
+      <header>
+        <div class="Menu">
+          Doctor
+          <button><a href="logout.php">خروج</a></button>
+        </div>
+      </header>
+      <main>
+        <div class="addmidicenc">
+          <form action="" method="post">
+            <input type="text" id="midicenc" />
+            <input type="text" id="time" />
+            <button onclick="save()">افزودن داور</button>
+          </form>
+        </div>
+        <div class="displayMidicinec">
+          <h2>نمایش دارو</h2>
+          <table>
+            <tr>
+              <th id="row">ردیف</th>
+              <th>داور</th>
+              <th>زمان</th>
+            </tr>
+            <tr>
+              <td id="row">1</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td id="row">2</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td id="row">3</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td id="row">4</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td id="row">5</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="Javascript/localstorge.js"></script>
+</html>
